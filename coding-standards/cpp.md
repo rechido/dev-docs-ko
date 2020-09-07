@@ -433,6 +433,22 @@ date: 2020-06-19
 
 63. <<<미정: __restrict keyword
 
+64. 콜론(:) 다음에 바로 줄이 바뀌는 경우가 아니면 항상 콜론 뒤에 공백을 넣는다.
+   **틀린 방식:**
+
+    ```cpp
+    MyClass::MyClass(const int num)
+      :mNum(num)
+    {
+    ```
+
+    **올바른 방식:**
+    ```cpp
+    MyClass::MyClass(const int num)
+      : mNum(num)
+    {
+    ```
+
 ## 2. 최신 C++ 기능 관련
 
 1. `override` 와 `final` 키워드를 반드시 사용한다.
